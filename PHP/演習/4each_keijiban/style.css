@@ -1,0 +1,189 @@
+.logo{
+    float: left;
+/*    padding-left: 10px;
+    color: white;
+    font-size: 25px;
+    line-height: 60px;
+*/
+}
+
+header{
+    clear: left;
+/*    position: absolute;*/
+    top: 200px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+header ul{
+    float: left;
+    line-height: 40px;
+}
+
+header ul li{
+    float: left;
+    list-style: none;
+    padding-right: 80px;
+    color: white;
+    font-size: 16px;
+}
+
+main{
+    clear;both;
+}
+.main-container{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.left{
+    float: left;
+    background-color: deepskyblue;
+    width: 65%;
+    margin-bottom: 40px;
+    margin: 0 auto;
+
+}
+.right{
+    float: left;
+    background-color: skyblue;
+    width: 30%;
+    margin-bottom: 40px;
+    /*margin: 0 auto*/
+    margin-left: 30px;
+}
+
+/*記事タイトル*/
+h1{
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+    padding-left: 20px;
+}
+
+/*日付*/
+h2{
+    border-left: 5px solid red;
+    /*border-bottom: 2px solid black;   */
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+/*サイドバーの中身*/
+h3{
+    /*font-size: 14px;*/
+    /*padding-left: 30px;*/
+    border-bottom: 2px dotted black;
+}
+.side li{
+    list-style: none;
+    font-size: 16px;
+    color: black; 
+    text-align: left;
+}
+/*
+/* ドットが必要だった。.right ul li 
+right ul li{
+    list-style: none;
+    font-size: 14px;
+    color: blue;
+}
+*/
+.capt{
+    font-size: 14px;
+}
+
+.article{
+    font-size: 16px;
+}
+
+
+/*
+.gray_box_1{
+    width: 800px;
+    background-color: lightgray;
+    text-align: center;
+}
+.gray_box_1 img{
+    width: 170px;
+    margin: 20px 10px -10px 10px;
+}
+.gray_box_1 .box_pict{
+    display: inline-block;
+}
+.gray_box_2{
+    width: 800px;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.gray_box_2 img{
+    width: 170px;
+    margin: 20px 10px -10px 10px;
+}
+.gray_box_2 .box_pict{
+    display: inline-block;
+}
+*/
+
+form{
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border: 3px #ebebeb solid;
+    //border-radius: 10px;
+    //width: 500px;
+    margin-bottom: 20px;
+}
+
+.box{
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border: 3px #ebebeb solid;
+    margin-bottom: 20px;
+}
+
+.contents{
+    padding: 4px 10px;
+    
+}
+
+label{
+    margin-top: 10px;
+    border-bottom: 2px solid lightgray;
+    font-size: 22px;
+    padding: 4px 10px;
+}
+
+form div{
+    padding: 15px;
+}
+
+.text, textarea{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    color: #999;
+    background: #fff;
+}
+
+.submit{
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    color: white;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    border-bottom: solid 2px gray;
+}
+
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 60px;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 60px;
+}

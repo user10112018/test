@@ -1,0 +1,16 @@
+package com.internousdev.webproj3.dao;
+
+import com.internousdev.webproj3.dto.HelloStrutsDTO;
+import com.internousdev.webproj3.util.DBConnector;
+
+public class HelloStrutsDAO {
+
+	public HelloStrutsDTO select(){
+		DBConnection db = new DBConnector();
+		COnnection con = db.getConnection();
+		HelloStrutsDTO dto = new HelloStrutsDTO();
+
+		String sql = "select * from users";
+	}
+
+}

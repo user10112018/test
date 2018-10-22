@@ -8,4 +8,5 @@
 <fullyQualifiedTypeName name="com.internousdev.webproj2.dao.LoginDAO"/>
 <fullyQualifiedTypeName name="com.internousdev.webproj2.dao.InquiryCompleteDAO"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

@@ -31,3 +31,5 @@
 0:0:0:0:0:0:0:1 - - [23/Oct/2018:16:51:08 +0900] "GET /template/buyItemConfirm.jsp HTTP/1.1" 404 1073
 127.0.0.1 - - [23/Oct/2018:16:53:13 +0900] "GET / HTTP/1.1" 404 1019
 0:0:0:0:0:0:0:1 - - [23/Oct/2018:16:53:15 +0900] "GET /template/buyItemConfirm.jsp HTTP/1.1" 200 1776
+127.0.0.1 - - [23/Oct/2018:17:47:06 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [23/Oct/2018:17:47:08 +0900] "GET /template/buyItemComplete.jsp HTTP/1.1" 200 1465

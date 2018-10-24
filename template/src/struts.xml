@@ -22,8 +22,6 @@ method="execute">
 </action>
 
 
-
-
 <!-- LoginAction -->
 <action name="LoginAction" class="com.internousdev.template.action.LoginAction"
 method="execute">
@@ -69,11 +67,11 @@ method="execute">
 </action>
 
 <!-- MyPageAction -->
-<!-- <action name="MyPageAction" class="com.internousdev.template.action.MyPageAction" -->
-<!-- method="execute"> -->
-<!-- <result name="success">myPage.jsp</result> -->
+<action name="MyPageAction" class="com.internousdev.template.action.MyPageAction"
+method="execute">
+<result name="success">myPage.jsp</result>
 
-<!-- </action> -->
+</action>
 
 
 

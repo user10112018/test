@@ -13,8 +13,9 @@
 <title>buyItem画面</title>
 
 <style type="text/css">
-/* ===== TAG LAYOUT ===== */
 
+
+/* ===== TAG LAYOUT ===== */
 body {
 margin: 0;
 padding: 0;
@@ -72,7 +73,6 @@ clear: both;
 </div>
 
 <div id="main">
-
 <div id="top">
 
 <p>BuyItem</p>
@@ -146,7 +146,7 @@ clear: both;
 <div>
 
 <span>前画面に戻る場合は</span>
-<a href=',s:url action="HomeAction"/>'>こちら</a>
+<a href='<s:url action="HomeAction"/>'>こちら</a>
 
 </div>
 
@@ -156,10 +156,8 @@ clear: both;
 
 
 <div id="footer">
-
 <div id="pr">
 </div>
-
 </div>
 
 

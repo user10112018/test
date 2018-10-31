@@ -6,35 +6,36 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-<title>TEST</title>
+<title>LoginError</title>
 </head>
-
 
 <body>
 
+<h1>エラーが発生しました</h1>
 <br>
-<h1>以下の新規ユーザーが登録されました</h1>
+<h3>ログインできません</h3>
+
+
+<s:if test='(#session.loginDTOList.get(0).username)=="該当なし"'>
+該当者はいませんでした
+</s:if>
 
 <br>
+
 <table>
 <tbody>
 <tr>
 
 <th>USERNAME</th>
 <th>PASSWORD</th>
-
 </tr>
-
-<s:iterator value="#session.loginDTOList">
 
 <tr>
+<s:iterator value="#session.loginDTOList">
+
 <td><s:property value="username"/></td>
 <td><s:property value="password"/></td>
-</tr>
-
-
-</s:iterator>
-
+</s:iterator></tr>
 
 </tbody>
 </table>

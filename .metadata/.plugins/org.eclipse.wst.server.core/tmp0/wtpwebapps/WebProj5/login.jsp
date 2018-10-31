@@ -6,14 +6,13 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-<title>TEST</title>
+<title>LOGIN</title>
 </head>
-
 
 <body>
 
-<br>
-<h1>以下の新規ユーザーが登録されました</h1>
+<s:property value="#session.loginDTOList.get(0).username"/>さん、ようこそ！
+
 
 <br>
 <table>
@@ -25,19 +24,18 @@
 
 </tr>
 
-<s:iterator value="#session.loginDTOList">
-
 <tr>
+
+<s:iterator value="#session.loginDTOList">
 <td><s:property value="username"/></td>
 <td><s:property value="password"/></td>
-</tr>
-
-
 </s:iterator>
 
-
+</tr>
 </tbody>
 </table>
+
+
 
 </body>
 </html>

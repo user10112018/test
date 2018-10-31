@@ -99,7 +99,8 @@ text-align: right;
 <th>購入日</th>
 </tr>
 
-<s:iterator>
+<%-- <s:iterator> --%>
+<s:iterator value="myPageList">
 
 <tr>
 <td><s:property value="itemName" /></td>

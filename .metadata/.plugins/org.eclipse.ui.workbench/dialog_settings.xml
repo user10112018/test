@@ -16,6 +16,8 @@
 		<list key="textArray">
 		</list>
 	</section>
+	<section name="PreferencesImportWizard">
+	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
@@ -24,5 +26,7 @@
 			<item value="org.eclipse.jpt.dbws"/>
 			<item value="org.eclipse.ui.Examples"/>
 		</list>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>

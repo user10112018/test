@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
 
 import com.internousdev.ecsite.dto.LoginDTO;
 import com.internousdev.ecsite.util.DBConnector;
@@ -17,7 +17,7 @@ public class LoginDAO {
 	private LoginDTO loginDTO = new LoginDTO();
 
 //	1101add
-	List<LoginDTO> loginDTOList = new ArrayList<LoginDTO>();
+	ArrayList<LoginDTO> loginDTOList = new ArrayList<LoginDTO>();
 
 	public LoginDTO getLoginUserInfo(String loginUserId, String loginPassword){
 
@@ -59,19 +59,21 @@ public class LoginDAO {
 
 //	1101add ======================================================
 //     DBを読んでユーザー情報をリストにまとめるためだけのメソッド
-	public List<LoginDTO> select(){
-
-		DBConnector db = new DBConnector();
-		Connection con = db.getConnection();
+	public ArrayList<LoginDTO> select(){
 
 		String sql = "SELECT * FROM login_user_transaction";
 
 		try {
 
-			PreparedStatement ps = con.prepareStatement(sql);
+			PreparedStatement ps = connection.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
-			if(rs.next()){
+//			if のままだと1つしか表示されない
+			while(rs.next()){
+
+//				これがないと同じユーザー情報が繰り返されるだけ
+				LoginDTO loginDTO = new LoginDTO();
+
 				loginDTO.setLoginId(rs.getString("login_id"));
 				loginDTO.setLoginPassword(rs.getString("login_pass"));
 				loginDTO.setUserName(rs.getString("user_name"));
@@ -83,7 +85,7 @@ public class LoginDAO {
 		e.printStackTrace();
 	    }
 	     try {
-		      con.close();
+		      connection.close();
 	     } catch (SQLException e){
 		e.printStackTrace();
 	    }

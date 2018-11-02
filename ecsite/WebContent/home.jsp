@@ -94,6 +94,19 @@ text-align: center;
 <a href='<s:url action="LogoutAction" />'>こちら</a></p>
 </s:if>
 
+
+<!-- 1102add ============================= -->
+<p>
+<a href='<s:url action="AdminAction" />'>管理者画面へ</a></p>
+
+
+
+
+
+
+
+
+
 </div>
 
 </div>

@@ -88,7 +88,6 @@ clear: both;
 width: 100%;
 height: 80px;
 background-color: black;
-clear: both;
 }
 
 
@@ -135,7 +134,7 @@ clear: both;
 <!-- === ユーザー === -->
 <div id="right">
    <p>ユーザー</p>
-   <s:form action="AdminAction">
+   <s:form action="UserCreateAction">
       <s:submit value="新規登録"/>
    </s:form>
 
@@ -152,10 +151,11 @@ clear: both;
 
 </tr>
 
-<s:iterator value="#session.helloStrutsDTOList">
+<s:iterator value="#session.loginDTOList">
 
 <tr>
-<td><s:property value="loginUserId"/></td>
+<!-- value の値はLoginDTO クラスで定義した変数名にする -->
+<td><s:property value="loginId"/></td>
 <td><s:property value="userName"/></td>
 <td><s:property value="loginPassword"/></td>
 <%-- <td><s:property value="result"/></td> --%>

@@ -96,7 +96,7 @@ method="execute">
 </action>
 
 
-<!-- 1102add ============================================== -->
+<!-- 1102 add ============================================== -->
 <!-- AdminAction -->
 <action name="AdminAction" class="com.internousdev.ecsite.action.AdminAction"
 method="execute">
@@ -127,6 +127,26 @@ method="execute">
 
 <result name="success">itemCreateComplete.jsp</result>
 </action>
+
+<!-- 1105 add ============================================== -->
+<!-- UserListAction -->
+<action name="UserListAction" class="com.internousdev.ecsite.action.UserListAction"
+method="execute">
+
+<result name="success">userList.jsp</result>
+</action>
+
+<!-- ItemListAction -->
+<action name="ItemListAction" class="com.internousdev.ecsite.action.ItemListAction"
+method="execute">
+
+<result name="success">itemList.jsp</result>
+</action>
+
+
+
+
+
 
 
 

@@ -44,7 +44,7 @@ public class ItemCreateConfirmAction extends ActionSupport implements SessionAwa
 		return itemPrice;
 	}
 
-	public void setItemName(int itemPrice){
+	public void setItemPrice(int itemPrice){
 		this.itemPrice = itemPrice;
 	}
 

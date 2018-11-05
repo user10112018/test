@@ -21,10 +21,17 @@ public class ItemCreateCompleteAction extends ActionSupport implements SessionAw
 
 	public String execute() throws SQLException {
 
+
+//		修正 @1105
 		dao.createItem(
 				session.get("itemName").toString(),
-				session.get("itemPrice").toString(),
-				session.get("itemStock").toString());
+//				session.get("itemPrice"),
+//				session.get(itemStock));
+
+//				Object → String → int へ型変換
+				Integer.parseInt(session.get("itemPrice").toString()),
+				Integer.parseInt(session.get("itemStock").toString()));
+
 
 		String result = SUCCESS;
 

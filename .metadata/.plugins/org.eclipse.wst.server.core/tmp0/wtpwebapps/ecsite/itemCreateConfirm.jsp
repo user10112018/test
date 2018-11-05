@@ -8,8 +8,8 @@
 <meta http-equiv="Content-Style-Type" content="text/css"/>
 <meta http-equiv="Content-Script-Type" content="text/javascript"/>
 <meta http-equiv="imagetoolbar" content="no"/>
-<meta name="Content-Type" content=""/>
-<meta name="Content-Type" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 
 <title>ItemCreateConfirm画面</title>
 

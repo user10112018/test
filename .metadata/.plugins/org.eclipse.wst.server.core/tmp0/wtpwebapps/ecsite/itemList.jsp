@@ -121,10 +121,10 @@ background-color: black;
 
 <div>
 
-   <table>
+   <table border="1" cellspacing="1" cellpadding="5">
 
    <tbody>
-<tr>
+<tr bgcolor="#dcdcdc">
 
 <th>itemNAME</th>
 <th>itemPRICE</th>

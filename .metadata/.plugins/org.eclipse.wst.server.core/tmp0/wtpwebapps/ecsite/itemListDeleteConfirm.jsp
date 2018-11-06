@@ -83,6 +83,9 @@ height: 300px;
 margin-bottom: 40px;
 }
 
+#button {
+display: inline-block;
+}
 
 #footer {
 clear: both;
@@ -122,16 +125,22 @@ background-color: black;
 
 <div id="text-center">
 <h3>すべての商品を削除します。よろしいですか？</h3>
-</div>
 
-<div>
+
+<div id="button">
    <s:form action="ItemListDeleteCompleteAction">
       <s:submit value="ＯＫ"/>
    </s:form>
+</div>
 
+<div id="button">
    <s:form action="ItemListAction">
       <s:submit value="キャンセル"/>
    </s:form>
+</div>
+
+
+
 
 
 </div>

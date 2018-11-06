@@ -6,8 +6,6 @@ import java.sql.SQLException;
 
 import com.internousdev.ecsite.util.DBConnector;
 
-
-
 public class UserListDeleteCompleteDAO {
 
 	private DBConnector db = new DBConnector();

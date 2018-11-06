@@ -84,6 +84,11 @@ margin-bottom: 40px;
 }
 
 
+#button {
+display: inline-block;
+}
+
+
 #footer {
 clear: both;
 width: 100%;
@@ -123,20 +128,22 @@ background-color: black;
 
 <div id="text-center">
 <h3>すべてのユーザーを削除します。よろしいですか？</h3>
-</div>
 
-<div>
+
+<div id="button">
    <s:form action="UserListDeleteCompleteAction">
       <s:submit value="ＯＫ"/>
    </s:form>
+</div>
 
+<div id="button">
    <s:form action="UserListAction">
       <s:submit value="キャンセル"/>
    </s:form>
+</div>
 
 
 </div>
-
 
 <!-- ================== main contents ================== -->
 

@@ -11,7 +11,7 @@
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
 
-<title>ItemListDeleteConfirm画面</title>
+<title>UserListDeleteConfirm画面</title>
 
 <style type="text/css">
 
@@ -83,7 +83,12 @@ height: 300px;
 margin-bottom: 40px;
 }
 
-#button {
+
+#button01 {
+display: inline-block;
+}
+
+#button02 {
 display: inline-block;
 }
 
@@ -99,6 +104,7 @@ background-color: black;
 
 
 </style>
+
 
 </head>
 
@@ -117,33 +123,30 @@ background-color: black;
 
 <!-- =========== label =========== -->
 <div id="top">
-<p>ItemListDeleteConfirm</p>
+<p>UserListDeleteConfirm</p>
 </div>
 <!-- =========== label =========== -->
 
 <!-- ================== main contents ================== -->
 
 <div id="text-center">
-<h3>すべての商品を削除します。よろしいですか？</h3>
+<h3>すべてのユーザーを削除します。よろしいですか？</h3>
+</div>
 
-
-<div id="button">
-   <s:form action="ItemListDeleteCompleteAction">
+<div id="button01">
+   <s:form action="UserListDeleteCompleteAction">
       <s:submit value="ＯＫ"/>
    </s:form>
 </div>
 
-<div id="button">
-   <s:form action="ItemListAction">
+<div id="button02">
+   <s:form action="UserListAction">
       <s:submit value="キャンセル"/>
    </s:form>
 </div>
 
 
 
-
-
-</div>
 
 <!-- ================== main contents ================== -->
 

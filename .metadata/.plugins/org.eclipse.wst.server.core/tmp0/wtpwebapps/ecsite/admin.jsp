@@ -107,7 +107,7 @@ background-color: black;
 
 <div id="main">
     <div id="top">
-    <p>管理者画面</p>
+    <p>Admin</p>
     </div>
 
 <!-- </div> -->
@@ -124,8 +124,10 @@ background-color: black;
       <s:submit value="新規登録"/>
    </s:form>
 
-
-   <table></table>
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+<!--    <table></table> -->
 
 <div>
    <s:form action="ItemListAction">
@@ -183,6 +185,9 @@ background-color: black;
 
 
 </div>
+
+<p><a href='<s:url action="GoHomeAction" />'>
+Home 画面へ</a></p>
 
 <!-- </div> -->
 

@@ -129,8 +129,8 @@ text-align: right;
 
 <div id="text-right">
 
-<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a>
-<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a>
+<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
+<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a></p>
 
 </div>
 

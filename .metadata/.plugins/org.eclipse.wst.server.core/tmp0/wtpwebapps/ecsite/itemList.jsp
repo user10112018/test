@@ -119,10 +119,53 @@ background-color: black;
 
 <!-- ================== main contents ================== -->
 
+<div>
+
+   <table>
+
+   <tbody>
+<tr>
+
+<th>itemNAME</th>
+<th>itemPRICE</th>
+<th>itemSTOCK</th>
+<!-- <th>RESULT</th> -->
+
+</tr>
+
+<s:iterator value="#session.itemList">
+
+<tr>
+<!-- value の値はLoginDTO クラスで定義した変数名にする -->
+<td><s:property value="ItemName"/></td>
+<td><s:property value="ItemPrice"/></td>
+<td><s:property value="ItemStock"/></td>
+<%-- <td><s:property value="result"/></td> --%>
+</tr>
+
+
+</s:iterator>
+</tbody>
+
+
+   </table>
 
 
 
 
+
+
+</div>
+
+<div>
+   <s:form action="ItemListDeleteConfirmAction">
+      <s:submit value="削除"/>
+   </s:form>
+</div>
+
+
+<p>
+<a href='<s:url action="AdminAction" />'>管理者画面へ</a></p>
 
 
 

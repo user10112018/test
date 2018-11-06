@@ -134,6 +134,9 @@ method="execute">
 method="execute">
 
 <result name="success">userList.jsp</result>
+<!-- 1106 add 登録情報がないとき -->
+<result name="error">userListError.jsp</result>
+
 </action>
 
 <!-- ItemListAction -->
@@ -141,12 +144,40 @@ method="execute">
 method="execute">
 
 <result name="success">itemList.jsp</result>
+<!-- 1106 add 登録情報がないとき -->
+<result name="error">itemListError.jsp</result>
+
 </action>
 
 
+<!-- 1106 add ============================================== -->
+<!-- ItemListDeleteConfirmAction -->
+<action name="ItemListDeleteConfirmAction" class="com.internousdev.ecsite.action.ItemListDeleteConfirmAction"
+method="execute">
 
+<result name="success">itemListDeleteConfirm.jsp</result>
+</action>
 
+<!-- ItemListDeleteCompleteAction -->
+<action name="ItemListDeleteCompleteAction" class="com.internousdev.ecsite.action.ItemListDeleteCompleteAction"
+method="execute">
 
+<result name="success">itemListDeleteComplete.jsp</result>
+</action>
+
+<!-- UserListDeleteConfirmAction -->
+<action name="UserListDeleteConfirmAction" class="com.internousdev.ecsite.action.UserListDeleteConfirmAction"
+method="execute">
+
+<result name="success">userListDeleteConfirm.jsp</result>
+</action>
+
+<!-- UserListDeleteCompleteAction -->
+<action name="UserListDeleteCompleteAction" class="com.internousdev.ecsite.action.UserListDeleteCompleteAction"
+method="execute">
+
+<result name="success">userListDeleteComplete.jsp</result>
+</action>
 
 
 

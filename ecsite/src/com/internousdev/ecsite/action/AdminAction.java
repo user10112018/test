@@ -22,7 +22,7 @@ public class AdminAction extends ActionSupport implements SessionAware {
 
 		loginDTOList = dao.select();
 
-		if(loginDTOList.size() > 0) {
+		if(loginDTOList.size() >= 0) {
 
 			session.put("loginDTOList", loginDTOList);
 			ret = SUCCESS;

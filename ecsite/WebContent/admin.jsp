@@ -127,6 +127,11 @@ background-color: black;
 
    <table></table>
 
+<div>
+   <s:form action="ItemListAction">
+      <s:submit value="一覧表示"/>
+   </s:form>
+</div>
 
 </div>
 
@@ -168,6 +173,11 @@ background-color: black;
 
    </table>
 
+<div>
+   <s:form action="UserListAction">
+      <s:submit value="一覧表示"/>
+   </s:form>
+</div>
 
 </div>
 

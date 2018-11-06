@@ -127,20 +127,20 @@ background-color: black;
    <tbody>
 <tr>
 
-<th>USERID</th>
-<th>USERNAME</th>
+<th>userID</th>
+<th>userNAME</th>
 <th>PASSWORD</th>
 <!-- <th>RESULT</th> -->
 
 </tr>
 
-<s:iterator value="#session.loginDTOList">
+<s:iterator value="#session.userList">
 
 <tr>
 <!-- value の値はLoginDTO クラスで定義した変数名にする -->
-<td><s:property value="loginId"/></td>
-<td><s:property value="userName"/></td>
-<td><s:property value="loginPassword"/></td>
+<td><s:property value="UserID"/></td>
+<td><s:property value="UserName"/></td>
+<td><s:property value="UserPassword"/></td>
 <%-- <td><s:property value="result"/></td> --%>
 </tr>
 
@@ -151,12 +151,16 @@ background-color: black;
 
    </table>
 
-
-
-
-
-
 </div>
+
+<div>
+   <s:form action="UserListDeleteConfirmAction">
+      <s:submit value="削除"/>
+   </s:form>
+</div>
+
+<p>
+<a href='<s:url action="AdminAction" />'>管理者画面へ</a></p>
 
 <!-- ================== main contents ================== -->
 

@@ -83,6 +83,10 @@ clear: both;
 <div>
 
 <a href='<s:url action="HomeAction" />'>ログインへ</a>
+<p></p>
+
+<p>
+<a href='<s:url action="AdminAction" />'>管理者画面へ</a></p>
 
 </div>
 

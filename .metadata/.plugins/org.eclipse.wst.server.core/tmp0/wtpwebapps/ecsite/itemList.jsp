@@ -129,6 +129,7 @@ background-color: black;
 <th>itemNAME</th>
 <th>itemPRICE</th>
 <th>itemSTOCK</th>
+<th>DELETE</th>
 <!-- <th>RESULT</th> -->
 
 </tr>
@@ -140,6 +141,11 @@ background-color: black;
 <td><s:property value="ItemName"/></td>
 <td><s:property value="ItemPrice"/></td>
 <td><s:property value="ItemStock"/></td>
+<td>
+   <s:form action="ItemListDeleteConfirmAction">
+      <s:submit value="削除"/>
+   </s:form>
+</td>
 <%-- <td><s:property value="result"/></td> --%>
 </tr>
 
@@ -159,7 +165,7 @@ background-color: black;
 
 <div>
    <s:form action="ItemListDeleteConfirmAction">
-      <s:submit value="削除"/>
+      <s:submit value="全件削除"/>
    </s:form>
 </div>
 

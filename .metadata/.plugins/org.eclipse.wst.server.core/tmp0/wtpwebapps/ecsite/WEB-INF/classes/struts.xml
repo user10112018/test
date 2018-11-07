@@ -180,6 +180,22 @@ method="execute">
 </action>
 
 
+<!-- 1107 add ============================================== -->
+<!-- UserListDeleteEachAction -->
+<action name="UserListDeleteEachAction" class="com.internousdev.ecsite.action.UserListDeleteEachAction"
+method="execute">
+
+<result name="success">userList.jsp</result>
+</action>
+
+
+
+
+
+
+
+
+
 
 </package>
 

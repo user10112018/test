@@ -143,12 +143,18 @@ background-color: black;
 <td><s:property value="UserName"/></td>
 <td><s:property value="UserPassword"/></td>
 <td>
-   <s:form action="UserListDeleteEachAction">
+<%--    <s:form action="UserListDeleteEachAction"> --%>
 <!--       変数 deleteFlg に"1"を代入して  -->
 <!--       UserListDeleteEachAction クラスの delete メソッドに渡す -->
+<!--       <input type="hidden" name="deleteFlg" value="1"> -->
+<%--       <s:submit value="削除" method="delete"/> --%>
+
+      <s:form action="TestAllListAction">
       <input type="hidden" name="deleteFlg" value="1">
-      <s:submit value="削除" method="delete"/>
-<%--             <s:submit value="削除" method="execute"/> --%>
+      <s:submit value="test" method="execute"/>
+
+
+
    </s:form>
 </td>
 <%-- <td><s:property value="result"/></td> --%>

@@ -1,12 +1,13 @@
 package com.internousdev.ecsite.action;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.internousdev.ecsite.dao.UserListDeleteEachDAO;
-//import com.internousdev.ecsite.dto.*;
+import com.internousdev.ecsite.dto.UserListDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -14,8 +15,11 @@ import com.opensymphony.xwork2.ActionSupport;
 public class UserListDeleteEachAction extends ActionSupport implements SessionAware {
 
 	public Map<String, Object> session;
+	public ArrayList<UserListDTO> userList = new ArrayList<UserListDTO>();
 	public String deleteFlg;
-	private String result;
+	public String result;
+
+//	private UserListDAO userListDAO = new UserListDAO();
 
 
 

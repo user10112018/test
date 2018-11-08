@@ -182,19 +182,24 @@ method="execute">
 
 <!-- 1107 add ============================================== -->
 <!-- UserListDeleteEachAction -->
-<action name="UserListDeleteEachAction" class="com.internousdev.ecsite.action.UserListDeleteEachAction"
+<!-- <action name="UserListDeleteEachAction" class="com.internousdev.ecsite.action.UserListDeleteEachAction" -->
+<!-- method="execute"> -->
+
+<!-- <result name="success">userList.jsp</result> -->
+<!-- </action> -->
+
+
+<!-- 1108 add ============ test action ================================== -->
+<!-- TestAllListAction -->
+<action name="TestAllListAction" class="com.internousdev.ecsite.action.TestAllListAction"
 method="execute">
 
-<result name="success">userList.jsp</result>
+<result name="success">userList02.jsp</result>
 </action>
 
 
 
-
-
-
-
-
+<!-- 1108 add ============ test action ================================== -->
 
 
 </package>

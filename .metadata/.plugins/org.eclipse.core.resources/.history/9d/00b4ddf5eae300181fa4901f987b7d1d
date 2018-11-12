@@ -1,0 +1,34 @@
+package com.internousdev.ecsite.action;
+
+import java.sql.SQLException;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.ecsite.dao.UserListDeleteEachDAO;
+import com.internousdev.ecsite.dto.LoginDTO;
+import com.internousdev.ecsite.dto.UserListDTO;;
+
+public class TestAllList2Action extends ActionSuport implements SessionAware {
+
+//	fields
+
+	public String deleteFlg;
+	public String result;
+
+
+//	methods
+	public String execute() throws SQLException {
+
+		UserListDeleteEachDAO dao = new UserListDeleteEachDAO();
+		LoginDTO dto = new LoginDTO();
+		UserListDTO dto2 = new UserListDTO();
+
+		if(deleteFlg.equals("1")) {
+
+			System.out.println("deleteFlg == 1");
+		}
+	}
+
+
+
+}

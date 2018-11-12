@@ -191,21 +191,43 @@ method="execute">
 
 <!-- 1108 add ============ test action ================================== -->
 <!-- TestAllListAction -->
-<action name="TestAllListAction" class="com.internousdev.ecsite.action.TestAllListAction"
+<!-- <action name="TestAllList2Action" class="com.internousdev.ecsite.action.TestAllListAction" -->
+<action name="TestAllList2Action" class="com.internousdev.ecsite.action.TestAllList2Action"
 method="execute">
 
 <result name="success">userList02.jsp</result>
 </action>
 
 
+<!-- 1112 add ============ ItemList ================================== -->
+<!-- ItemListDeleteEachAction -->
+<action name="ItemListDeleteEachAction" class="com.internousdev.ecsite.action.ItemListDeleteEachAction"
+method="execute">
 
-<!-- 1108 add ============ test action ================================== -->
+<result name="success">itemList.jsp</result>
+</action>
+
+<!-- 1112 add ============ test action ================================== -->
+
+<!-- TestAllListAction -->
+<!-- <action name="TestAllList2Action" class="com.internousdev.ecsite.action.TestAllListAction" -->
+<action name="TestAllListItemAction" class="com.internousdev.ecsite.action.TestAllListItemAction"
+method="execute">
+
+<result name="success">itemList02.jsp</result>
+</action>
+
+
+
+
+
+
+
+
+
+
 
 
 </package>
-
-
-
-
 
 </struts>

@@ -142,9 +142,16 @@ background-color: black;
 <td><s:property value="ItemPrice"/></td>
 <td><s:property value="ItemStock"/></td>
 <td>
-   <s:form action="ItemListDeleteConfirmAction">
-      <s:submit value="削除"/>
+<%--    <s:form action="ItemListDeleteEachAction"> --%>
+<%--       <s:submit value="削除"/> --%>
+<%--    </s:form> --%>
+
+      <s:form action="TestAllListItemAction">
+      <input type="hidden" name="deleteFlg" value="1">
+      <s:submit value="test" method="execute"/>
+
    </s:form>
+
 </td>
 <%-- <td><s:property value="result"/></td> --%>
 </tr>

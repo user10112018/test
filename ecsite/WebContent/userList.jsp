@@ -149,7 +149,7 @@ background-color: black;
 <!--       <input type="hidden" name="deleteFlg" value="1"> -->
 <%--       <s:submit value="削除" method="delete"/> --%>
 
-      <s:form action="TestAllListAction">
+      <s:form action="TestAllList2Action">
       <input type="hidden" name="deleteFlg" value="1">
       <s:submit value="test" method="execute"/>
 
@@ -157,6 +157,11 @@ background-color: black;
 
    </s:form>
 </td>
+
+<!-- 11/22 ボタンの位置とリストの位置を紐付けるためのSelectedId -->
+<!-- selectedId -->
+<%-- <td><s:property value="id"/><s:hidden name="id" value="%{id}"/><s:hidden name="selectedId" id="selectedId%{#st.index}" value=""/></td> --%>
+
 <%-- <td><s:property value="result"/></td> --%>
 </tr>
 

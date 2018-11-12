@@ -21,6 +21,8 @@ public class TestAllListAction extends ActionSupport implements SessionAware {
 	public String userID;
 	public String Password;
 
+	UserListDTO dto = new UserListDTO();
+
 
 	public String execute() throws SQLException {
 
@@ -52,24 +54,28 @@ public class TestAllListAction extends ActionSupport implements SessionAware {
 
 
 
-//			test 5  ---
+//			test 5  --- NG
 
-			System.out.println(userID);
+//			System.out.println(userID);
+////			null
+//
+//			userID = session.get("UserID").toString();
+//			System.out.println(userID);
+////			ここでNullPointerError となる
+//
+//
+//			dto = dao.getUserInfo(userID, Password);
+//
+//			session.put("UserID", dto.getUserID());
+//			session.put("UserName", dto.getUserName());
+//			session.put("Password", dto.getUserPassword());
+//
+//			System.out.println(dto.getUserID());
 //			null
 
-			userID = session.get("UserID").toString();
-			System.out.println(userID);
-//			ここでNullPointerError となる
+//			test 6
 
 
-			dto = dao.getUserInfo(userID, Password);
-
-			session.put("UserID", dto.getUserID());
-			session.put("UserName", dto.getUserName());
-			session.put("Password", dto.getUserPassword());
-
-			System.out.println(dto.getUserID());
-//			null
 
 
 			result = SUCCESS;

@@ -170,9 +170,10 @@ background-color: black;
 <tbody>
 
 <tr>
-<td><s:property value="session.UserID"/></td>
-<td><s:property value="session.UserName"/></td>
-<td><s:property value="session.Password"/></td>
+<!-- loginDTO で定義したフィールド名 -->
+<td><s:property value="#session.loginUserId"/></td>
+<td><s:property value="#session.userName"/></td>
+<td><s:property value="#session.loginPassword"/></td>
 </tr>
 
 

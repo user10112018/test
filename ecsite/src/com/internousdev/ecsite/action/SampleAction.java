@@ -13,6 +13,7 @@ import com.opensymphony.xwork2.ActionSupport;
 //import com.internousdev.ecsite.dto.UserListDTO;
 
 
+//   UserInfoDeleteAction.java
 public class SampleAction extends ActionSupport implements SessionAware{
 
 	private Map<String, Object> session;

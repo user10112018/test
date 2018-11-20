@@ -1,0 +1,12 @@
+/**
+ *
+ */
+jQuery (function(){
+
+// ここにjQueryを書いていく
+
+$("#samp2").fadeIn("slow");
+$("#samp1 #samp2").fadeOut("slow");
+
+});
+

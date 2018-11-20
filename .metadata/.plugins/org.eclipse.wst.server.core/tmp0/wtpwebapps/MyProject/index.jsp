@@ -51,7 +51,7 @@
      <tr><td>中身②－2</td></tr>
      <tr><td>項目①</td><td>中身③</td></tr>
 </table>
-
+https://techacademy.jp/magazine/9428
 <br>
 
 <p>■ 修飾</p>
@@ -59,6 +59,12 @@
 <!-- 水平線を入れたいときには<hr>タグ -->
 <hr>
 <p>この文章の上に<span style="background:#008080;color:aqua;">水平線</span>が入ります</p>
+
+<br>
+
+<p>■ jQuery</p>
+
+<a href="jquery.jsp">sample</a>
 
 <br>
 

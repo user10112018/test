@@ -1,0 +1,37 @@
+/**
+ *
+ */
+jQuery (function(){
+
+// ここにjQueryを書いていく
+
+	$("h1").click(function(){
+		$(".samp2").fadeIn("slow");
+		$(".samp1 .samp2").fadeOut("slow");
+		$("h1").css("color", "#dc143c")
+	})
+
+//	$("img").hover(
+	$(".click_img img").hover(
+			function(){
+				$(this).animate({width:"440px"});
+			},
+			function(){
+				$(this).animate({width:"400px"});
+			});
+
+	$(".4imgs img").hover(
+			function(){
+				$(this).animate({width:"300px"});
+			},
+			function(){
+				$(this).animate({width:"400px"});
+			});
+
+
+
+
+
+
+});
+

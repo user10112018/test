@@ -1,0 +1,41 @@
+/**
+ *
+ */
+jQuery (function(){
+
+// ここにjQueryを書いていく
+
+	$("h1").click(function(){
+		$(".samp2").fadeIn("slow");
+		$(".samp1 .samp2").fadeOut("slow");
+		$("h1").css("color", "#dc143c")
+	})
+
+//	$("img").hover(
+//	こうすると5枚全部が動く
+
+	$(".click_img img").hover(
+//	先頭の1枚
+			function(){
+				$(this).animate({width:"440px"});
+			},
+			function(){
+				$(this).animate({width:"400px"});
+			});
+
+	$(".4imgs img").hover(
+//	残りの4枚
+			function(){
+				$(this).animate({width:"300px"});
+			},
+			function(){
+				$(this).animate({width:"400px"});
+			});
+
+
+
+
+
+
+});
+

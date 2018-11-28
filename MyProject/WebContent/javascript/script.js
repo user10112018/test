@@ -5,6 +5,30 @@ jQuery (function(){
 
 // ここにjQueryを書いていく
 
+	/* ============== 上へ戻るボタン ================ */
+    //■page topボタン
+    var topBtn=$('#pageTop');
+    topBtn.hide();
+
+    //◇ボタンの表示設定
+    $(window).scroll(function(){
+      if($(this).scrollTop()> 120){
+        //---- 画面を120pxスクロールしたら、ボタンを表示する
+        topBtn.fadeIn();
+      }else{
+        //---- 画面が120pxより上なら、ボタンを表示しない
+        topBtn.fadeOut();
+      }
+    });
+
+    // ◇ボタンをクリックしたら、スクロールして上に戻る
+    topBtn.click(function(){
+      $('body,html').animate({
+      scrollTop: 0},500);
+      return false;
+    });
+    /* ============== 上へ戻るボタン ================ */
+
 	$("h1").click(function(){
 		$(".samp2").fadeIn("slow");
 		$(".samp1 .samp2").fadeOut("slow");
@@ -32,9 +56,10 @@ jQuery (function(){
 				$(this).animate({width:"400px"});
 			});
 
-
-
-
+	document.querySelector('button')
+	  .addEventListener('click', function() {
+	    document.querySelector('ul').classList.toggle('is-open');
+	  });
 
 
 });

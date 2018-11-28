@@ -1,0 +1,66 @@
+/**
+ *
+ */
+jQuery (function(){
+
+// ここにjQueryを書いていく
+
+	$("h1").click(function(){
+		$(".samp2").fadeIn("slow");
+		$(".samp1 .samp2").fadeOut("slow");
+		$("h1").css("color", "#dc143c")
+	})
+
+//	$("img").hover(
+//	こうすると5枚全部が動く
+
+	$(".click_img img").hover(
+//	先頭の1枚
+			function(){
+				$(this).animate({width:"500px"});
+			},
+			function(){
+				$(this).animate({width:"400px"});
+			});
+
+	$(".4imgs img").hover(
+//	残りの4枚
+			function(){
+				$(this).animate({width:"300px"});
+			},
+			function(){
+				$(this).animate({width:"400px"});
+			});
+
+	document.querySelector('button')
+	  .addEventListener('click', function() {
+	    document.querySelector('ul').classList.toggle('is-open');
+	  });
+
+//	===================== 上に戻るボタン =====================
+	// 上に戻るボタンの要素を取得。
+	var $MTP = $('#move_to_top');
+
+	// 要素がある場合のみ処理するようにする。
+	if ($MTP.size() > 0)
+	{
+	    // スクロールされた場合に処理するイベントを登録。
+	    $(window).scroll(function()
+	    {
+	        // ページのスクロール量でクラスを振り分ける。
+	        if ($(this).scrollTop() > 500)  //  この数値を変えて出現位置を変更させる
+	        {
+	            // ページのスクロール量が1000pxを超えたら
+	            // ボタン要素に『show』クラスを追加。
+	            $MTP.addClass('show');
+	        }
+	        else
+	        {
+	            // それ以外の場合は『show』クラスを削除。
+	            $MTP.removeClass('show');
+	        }
+	    });
+	}
+
+});
+

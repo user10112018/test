@@ -111,6 +111,7 @@ font-size: 3px;
 <a href="jquery.jsp">sample</a>
 
 <br>
+<br>
 
 <p class="name">■ レイアウトサンプル</p>
 
@@ -119,6 +120,7 @@ font-size: 3px;
 <a href="3columns.jsp">３カラムレイアウト</a>
 
 <br><br>
+★ 中央寄せと検索すると高確率でHITするflexboxを使用したversion<br>
 <a href="2columns_flexbox.jsp">２カラムレイアウト(flexbox)</a>
 <br>
 <a href="3columns_flexbox.jsp">３カラムレイアウト(flexbox)</a>
@@ -164,7 +166,14 @@ http://serinaishii.hatenablog.com/entry/2015/11/06/%E8%B6%85%E7%B0%A1%E5%8D%98%2
 <br>
 
 
+<br>
 
+<p class="name">■ Tips</p>
+ブラウザのアドレスバーに<br>
+<input type="text" name="XXX" size="50" value="data:text/html, <html contenteditable>"><br>
+と打ち込むと、ブラウザがメモ帳のようになり、画面にテキストを入力できる
+
+<br>
 </div>
 
 

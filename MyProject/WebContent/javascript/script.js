@@ -12,11 +12,11 @@ jQuery (function(){
 
     //◇ボタンの表示設定
     $(window).scroll(function(){
-      if($(this).scrollTop()> 120){
-        //---- 画面を120pxスクロールしたら、ボタンを表示する
+      if($(this).scrollTop()> 150){
+        //---- 画面を150pxスクロールしたら、ボタンを表示する
         topBtn.fadeIn();
       }else{
-        //---- 画面が120pxより上なら、ボタンを表示しない
+        //---- 画面が150pxより上なら、ボタンを表示しない
         topBtn.fadeOut();
       }
     });
